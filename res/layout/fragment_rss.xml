@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <View
+	        android:id="@+id/space1"
+			android:background="#FFFFFF"
+	        android:layout_width="fill_parent"
+	        android:layout_height="5dip"
+		/>
+	<TextView
+        android:id="@+id/head"
+		android:background="#97ccb4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:text="Nutrition RSS"
+		android:gravity="center"
+		android:textSize="50sp"/>
+   	<View
+        android:id="@+id/space1"
+		android:background="#FFFFFF"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+		/>
+   <ListView
+        android:id="@+id/list"
+       	android:divider="#FFFFFF"
+   		android:dividerHeight="4px"
+        android:focusableInTouchMode="true"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     />
+   		 <ViewStub
+			android:id="@android:id/empty"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout="@layout/empty" />
+</LinearLayout>

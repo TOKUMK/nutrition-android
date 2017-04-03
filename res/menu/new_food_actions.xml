@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Check updates -->
+    <item android:id="@+id/add_to_database"
+          android:icon="@drawable/ic_check2"
+          android:showAsAction="always" />
+
+</menu>

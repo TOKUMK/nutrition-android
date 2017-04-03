@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nutrition Intuition</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Nutrition Report</item>
+        <item>Add New Food</item>
+        <item>Food Library</item>
+        <item>Food Journal</item>
+        <item>Nutrition Rss</item>
+        <item>NutriCart</item>
+    </string-array>
+
+    <!-- Food categories -->
+    <string-array name="food_cat_items">
+        <item>Fruit and Vegatables</item>
+        <item>Cereals and Grains</item>
+        <item>Meat and Fish</item>
+        <item>Legumes</item>
+        <item>Dairy</item>
+        <item>Other</item>
+    </string-array>
+    
+
+    <!-- diet Spinner Items -->
+    <string-array name="diet_cats">
+        <item>Average Diet</item>
+        <item>Loose Weight</item>
+        <item>Build Mass</item>
+    </string-array>
+    
+    <!-- exercise spinner Items -->
+    <string-array name="exercise_cats">
+        <item>Intensive Exercise</item>
+        <item>Moderate Exercise</item>
+        <item>A little Exercise</item>
+        <item>Exercise?</item>
+    </string-array>
+
+    <!--gender spinner Items -->
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <!-- diet Items -->
+    <string-array name="diet">
+        <item>Build Mass</item>
+        <item>Loose Weight</item>
+        <item>Brain Optimization</item>
+        <item>Paleolithic</item>
+        <item>Ketogenic</item>
+    </string-array>
+
+    <string-array name="exercise">
+        <item>Little to No Exercise</item>
+        <item>Light Exercise</item>
+        <item>Moderate Exercise</item>
+        <item>Heavy Exercise</item>
+        <item>Intensive Exercise</item>
+    </string-array>
+
+    <!-- Nutrient Names -->
+    <string-array name="nutrient_names">
+        <item>Calories</item>
+        <item>Total Fat</item>
+        <item>Saturated Fat</item>
+        <item>Trans Fat</item>
+        <item>Cholesteral</item>
+        <item>Sodium</item>
+        <item>Total Carbohydrates</item>
+        <item>Dietary Fibre</item>
+        <item>Sugars</item>
+        <item>Protein</item>
+        <item>Calcium</item>
+        <item>Iron</item>
+        <item>Vitamin A</item>
+        <item>Vitamin B</item>
+        <item>Vitamin C</item>
+        <item>Vitamin D</item>
+        <item>Vitamin E</item>
+        <item>Vitamin K</item>
+        <item>Potassium</item>
+        <item>Phosphorus</item>
+        <item>Thaimin</item>
+        <item>RiboFlavin</item>
+        <item>Niacin</item>
+        <item>Magnesium</item>    
+		<item>Manganese</item>          
+        <item>Zinc</item>
+        <item>Copper</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_love</item>
+        <item>@drawable/ic_recipes_2</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_food_list">FoodListActivity</string>
+    <string name="title_activity_activity_food_list">ActivityFoodList</string>
+    <string name="title_activity_food_item_facts">FoodItemFacts</string>
+    <string name="title_activity_food_nutrition_facts">FoodNutritionFactsActivity</string>
+    <string name="title_activity_new_food_manual_entry">NewFoodManualEntry</string>
+    <string name="title_activity_action_bar_test">ActionBarTest</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_user_registration">UserRegistration</string>
+    <string name="title_activity_new_recipe">NewRecipe</string>
+    <string name="title_activity_nutri_cart">NutriCart</string>
+
+</resources>

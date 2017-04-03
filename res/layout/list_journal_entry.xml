@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="10dip">
+
+     <ImageView
+        android:id="@+id/image"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/icon"/>
+    <TextView
+        android:id="@+id/tvFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image"
+        android:layout_marginLeft="35dip"
+        android:layout_centerVertical="true"
+        android:text="Positive NRG"
+        android:paddingBottom ="10dip"
+        android:textColor="#040404"
+        android:textSize="25dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    
+    <RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_toRightOf="@+id/tvFoodName"
+	    android:padding="2dip" >
+	     <TextView
+	        android:id="@+id/tvServingSize"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentRight="true"
+	       	android:layout_marginTop="20dp"
+	        android:layout_marginBottom="2dp"
+	        android:textStyle="bold"
+	        android:textSize="15dip"
+	        android:text="200 Grams"/>
+	    <TextView
+	        android:id="@+id/tvTime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentBottom="true"
+	        android:layout_below="@+id/tvServingSize"
+	        android:paddingTop ="2dip"
+	        android:paddingBottom ="5dip"
+	        android:textColor="#040404"
+	        android:text="20:20"
+	        android:textSize="15dip"
+	        android:typeface="sans" />
+		</RelativeLayout> 
+		
+</RelativeLayout> 

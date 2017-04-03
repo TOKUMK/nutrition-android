@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/journal_today"
+          android:title="Today"
+          android:showAsAction="always" />
+	<item android:id="@+id/journal_yesterday"
+          android:title="Yesterday"
+          android:showAsAction="always" />
+	<item android:id="@+id/journal_3"
+          android:title="Day 3"
+          android:showAsAction="always" />
+	<item android:id="@+id/journal_4"
+          android:title="Day 4"
+          android:showAsAction="always" />
+	<item android:id="@+id/journal_5"
+          android:title="Day 5"
+          android:showAsAction="always" />
+	<item android:id="@+id/journal_6"
+          android:title="Day 6"
+          android:showAsAction="always" />
+	<item android:id="@+id/journal_7"
+          android:title="Day 7"
+          android:showAsAction="always"/>
+</menu>
+

@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip" >
+           <View
+		android:id="@+id/space1"
+		android:background="#FFFFFF"
+	    android:layout_width="fill_parent"
+	    android:layout_height="5dip"/>
+  <LinearLayout
+        android:id="@+id/widgetWrap"
+        android:background="#97ccb4"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="17dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+   <ImageView
+       android:id="@+id/image"
+	    android:layout_width="80dip"
+	    android:layout_height="80dip"
+	    android:adjustViewBounds="true"
+	    android:src="@drawable/ic_food_db" />
+   <TextView
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:layout_alignBaseline="@+id/image"
+		android:text="Food Databank: (Cat)"
+		android:gravity="center"
+		android:textSize="30dip"/>
+
+  </LinearLayout>
+       <View
+		android:id="@+id/space1"
+		android:layout_below="@+id/widgetWrap"
+		android:background="#FFFFFF"
+	    android:layout_width="fill_parent"
+	    android:layout_height="5dip"/>
+
+  
+      <ListView
+        android:id="@android:id/list"
+        android:background="#c8ebdc"
+        android:layout_below="@+id/widgetWrap"
+        android:scrollbars="none"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent">
+    </ListView>
+		 <ViewStub
+			android:id="@android:id/empty"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout="@layout/empty" />
+  
+
+
+</RelativeLayout> 
+
+  
+
+

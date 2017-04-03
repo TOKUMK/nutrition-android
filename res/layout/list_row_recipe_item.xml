@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="10dip">
+
+    <TextView
+        android:id="@+id/tvFoodName"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dip"
+        android:paddingBottom ="10dip"
+        android:textSize="13dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    
+    <CheckBox
+    android:id="@+id/checkBox"
+    android:layout_alignParentRight="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    
+</RelativeLayout>

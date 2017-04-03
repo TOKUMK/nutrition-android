@@ -1,0 +1,1275 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+    >
+     <View
+        android:id="@+id/space1"
+		android:background="#FFFFFF"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+		/>
+   <TextView
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:text="New Food Entry"
+		android:background="#97ccb4"
+		android:gravity="center"
+		android:textSize="50sp"/>
+   <View
+        android:id="@+id/space1"
+		android:background="#FFFFFF"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+		/>
+   <EditText
+        android:id="@+id/foodName"
+        android:background="#c8ebdc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:hint="Food Name"
+		android:gravity="center"
+		android:padding="10dip"
+		android:textSize="20dip"/>
+      <View
+        android:id="@+id/space2"
+		android:background="#FFFFFF"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+		/>
+  	<EditText
+        android:id="@+id/eanNumber"
+        android:numeric="integer"
+        android:background="#c8ebdc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:hint="EAN Number"
+		
+		android:gravity="center"
+		android:padding="10dip"
+		android:textSize="20dip"/>
+  	<View
+        android:id="@+id/space3"
+		android:background="#FFFFFF"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+		/>
+  	
+	<Spinner
+	   	android:id="@+id/spinner1"
+	   	android:background="#97ccb4"
+	   	android:textAlignment="center"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:entries="@array/food_cat_items"
+		android:layout_marginBottom="2dip" />
+	
+	<View
+        android:id="@+id/space4"
+		android:background="#FFFFFF"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+		/>
+		
+
+	<EditText
+		android:id="@+id/servingSizeValue"
+		android:background="#c8ebdc"
+		android:gravity="center"
+		android:padding="10dip"
+		android:numeric="integer"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:hint="Serving Size (grams)"
+		android:textSize="20dip"/>
+			
+	<View
+        android:id="@+id/space5"
+		android:background="#FFFFFF"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+		/>
+	
+	<RelativeLayout
+	       android:id="@+id/relative"
+	       android:background="#c8ebdc"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/nName"
+	        android:layout_width="145dip"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:background="@color/PowderBlue" 
+			android:text="Nutrient Name"
+			android:padding="1dip"
+			android:textSize="15sp"
+		/>  
+       	
+       	<TextView
+	        android:id="@+id/amount"
+	        android:layout_width="95dip"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	    	android:layout_marginBottom="1dip"
+			android:background="@color/PeachPuff" 
+			android:text="Amount "
+			android:padding="1dip"
+			android:textSize="15sp"
+		/>  
+   </RelativeLayout>
+	
+	
+	
+	
+	<LinearLayout
+	    android:id="@+id/layout_nutrients"
+	    android:background="#c8ebdc"
+	    android:orientation="vertical"
+	    android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+       	
+	    
+	<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Calories"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et1"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Calories"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>
+	
+
+			  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+			  		
+	<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Total Fat"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et2"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Total Fat"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>
+			  		
+			  		
+
+			  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+			  		
+			  		
+			  		
+			  		
+	<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Saturated Fat"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et3"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Saturated Fat"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout> 		
+			  		
+			  		
+			  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+			  		
+			  		
+			  		
+			  		
+			  		
+<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Trans Fat"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et4"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="TransFat"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+									  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+									  		
+			<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Cholesteral"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et5"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Cholesteral"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>
+									  		
+
+									  		
+									  		
+									  		
+									  		
+									  		
+									  		
+									  		
+									  		
+									  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+									  		
+									  		
+								  		
+			<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Sodium"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et6"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Sodium"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>							  		
+									  		
+									  		
+
+									  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+									  		
+									
+						<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Total Carbs"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et7"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Total Carbs"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>							  		
+									  		
+									  		
+			
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+												  		
+												  		
+							
+						<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Dietary Fibre"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et8"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Dietary Fibre"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>										  		
+												  		
+												  		
+
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+												  		
+												  		
+												  		
+				
+						<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Sugars"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et9"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Sugars"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>										  		
+												  		
+																		  		
+												  		
+												  		
+												  		
+												  		
+
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+				
+						<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+	    	android:text="Protein"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et10"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Protein"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>	
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+									
+									<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Calcium"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et11"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Calcium"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>	
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+												  		
+												  		
+												  		
+												  		
+									
+									<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Iron"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et12"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Iron"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>	
+			
+			
+
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+												  		
+												  		
+												  		
+												  		
+												  		
+												  		
+									<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Vitamin A"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et13"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Vitamin A"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>	
+			
+			
+			
+			
+			
+			
+			
+			
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+												  		
+	<RelativeLayout
+		       android:id="@+id/relative"
+		       android:background="#c8ebdc"
+		       android:layout_width="fill_parent"
+		       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Vitamin B"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et14"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Vitamin B"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>													  		
+												  		
+												  		
+	
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+												  		
+												<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Vitamin C"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et15"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Vitamin C"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>										  		
+												  		
+												  		
+												  		
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+												  		
+												  		
+												  		
+												  		
+									<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Vitamin D"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et16"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Vitamin D"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>	
+			
+			
+			
+			
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+												  		
+												  		
+												  		
+												  		
+												  		
+												  		
+									<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Vitamin E"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et17"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Vitamin E"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>	
+			
+			
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+									<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Vitamin K"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et18"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Vitamin k"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>	
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+												  		
+												  		
+									<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Potassium"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et19"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Potassium"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>	
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+												  		
+											<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Phosphorus"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et20"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Phosphorus"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>											  		
+												  		
+												  		
+		
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+												  		
+													<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Thaimin"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et21"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Thaimin"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>											  		
+																	  		
+												  		
+												  		
+	
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+												  		
+												  		
+												  		
+															<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="RiboFlavin"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et22"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="RiboFlavin"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>											  		
+												  		
+												  		
+			
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+												  		
+												  		
+																	<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Niacin"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et23"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Niacin"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>											  		
+												  		
+												  		
+												  		
+												  		
+		
+												  		<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+												  		
+												  		
+												  		
+												  		
+												  		
+												  		
+																	<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Magnesium"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et24"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Magnesium"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>											  		
+
+			
+			
+	    												<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+	    												
+	   											  		
+																	<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Manganese"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et25"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Manganese"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>		 												
+	    												
+	    												
+	    												
+	    												
+		
+				    												<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+				    												
+				    												
+					   											  		
+																	<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Zinc"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et26"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Zinc"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>		 												
+	    				    												
+				    												
+	
+				    												<View
+				        android:id="@+id/space3"
+						android:background="#FFFFFF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="5dip"
+						/>
+	   											  		
+																	<RelativeLayout
+       android:id="@+id/relative"
+       android:background="#c8ebdc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+		<TextView
+	        android:id="@+id/tView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	    	android:layout_marginBottom="1dip"
+	    	android:layout_marginLeft="5dip"
+			android:text="Copper"
+			android:padding="10dip"
+			android:textSize="20sp"
+		/>  
+       	
+		<EditText
+				android:id="@+id/et27"
+				android:layout_toRightOf="@+id/tView"
+				android:background="#c8ebdc"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:padding="10dip"
+				android:hint="Copper"
+				android:numeric="integer"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"/>
+   </RelativeLayout>		 												
+	    				
+	</LinearLayout>
+	
+
+	
+</LinearLayout>
+</ScrollView>
